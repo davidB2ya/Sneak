@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Questrial&display=swap');
+
+:root {
+    --pink-custome: rgba(255, 86, 114, 1);
+    --gray-text   : rgba(112, 112, 112);
+    --footer-text : #C3D0D8;
+}
+
+* {
+    margin    : 0;
+    padding   : 0;
+    box-sizing: border-box;
+    cursor    : default;
+}
+
+body {
+    font-family: 'Questrial', sans-serif;
+}
+
+
+/*  Header  */
+.header-menu {
+    display        : flex;
+    justify-content: space-around;
+    padding        : 1.25rem;
+    align-items    : center;
+    font-size      : 14px;
+}
+
+.logo img {
+    cursor: pointer;
+}
+
+.open,
+.close {
+    display: none;
+    color  : var(--gray-text)
+}
+
+.navigation-header {
+    display        : flex;
+    gap            : 2.5rem;
+    list-style-type: none;
+}
+
+.itemsNav a {
+    color          : var(--gray-text);
+    text-decoration: none;
+    transition     : all .5s;
+    cursor         : pointer;
+}
+
+.itemsNav a:hover {
+    background-color: var(--pink-custome);
+    padding         : 0.4rem 1.75rem;
+    color           : white;
+}
+
+.itemsNav .active {
+    background-color: var(--pink-custome);
+    padding         : 0.4rem 1.75rem;
+    color           : white;
+}
+
+.search-btn {
+    margin-top: -0.3em;
+    border    : none;
+    background: transparent;
+}
+
+.search-btn img {
+    cursor: pointer;
+
+}
+
+/*  Header  */
+
+/*  Landing  */
+
+.landing-section {
+    background-color: var(--pink-custome);
+    height          : 90vh;
+    display         : flex;
+    flex-direction  : column;
+    justify-content : center;
+    align-items     : center;
+    gap             : 1.6rem;
+    white-space     : normal;
+}
+
+.title-landing {
+    color         : #fff;
+    font-size     : 40px;
+    font-weight   : 600;
+    letter-spacing: 0.2em;
+    word-spacing  : 0.25em;
+    font-family   : 'Montserrat', sans-serif;
+}
+
+.text-sub {
+    display       : flex;
+    flex-direction: column;
+    align-items   : center;
+    font-size     : 17px;
+    letter-spacing: 0.125em;
+    line-height   : 1.5em;
+    color         : #fff;
+}
+
+.btn-landing {
+    background-color: white;
+    color           : var(--pink-custome);
+    font-size       : 10px;
+    font-weight     : 500;
+    letter-spacing  : 0.125em;
+    padding         : 0.8rem 1.75rem;
+    border          : none;
+    cursor          : pointer;
+}
+
+/*  Landing  */
+
+/*  Portfolio  */
+
+.portfolio-section {
+    display        : flex;
+    flex-direction : column;
+    justify-content: center;
+    align-items    : center;
+    height         : 75em;
+}
+
+.mode-view {
+    display        : flex;
+    justify-content: center;
+    gap            : 1.25rem;
+    margin         : 2.5rem 0;
+}
+
+.mode-view button img {
+    cursor: pointer;
+}
+
+.mode-view button {
+    background-color: transparent;
+    border          : none;
+}
+
+.portfolio {
+    display      : flex;
+    gap          : 1rem;
+    margin-top   : 2rem;
+    margin-bottom: 5rem;
+    width        : 55vw;
+    height       : 100%
+}
+
+.portfolio .container img {
+    width     : 100%;
+    margin    : 0.5rem 0;
+    object-fit: cover;
+}
+
+.one {
+    width : 100%;
+    height: 14em;
+}
+
+.two {
+    width : 100%;
+    height: 24em;
+}
+
+.three {
+    width : 100%;
+    height: 20em;
+}
+
+.four {
+    width : 100%;
+    height: 12em;
+}
+
+.five {
+    width : 100%;
+    height: 20em;
+}
+
+.six {
+    width : 100%;
+    height: 26em;
+}
+
+.seven {
+    width : 100%;
+    height: 23.8em;
+}
+
+.eight {
+    width : 100%;
+    height: 11em;
+}
+
+.nine {
+    width : 100%;
+    height: 11em;
+}
+
+.ten {
+    width : 100%;
+    height: 11em;
+}
+
+.btn-show-more {
+    background-color: var(--pink-custome);
+    padding         : 0.7rem 1.75rem;
+    color           : white;
+    border          : none;
+    margin-top      : 4rem;
+    font-size       : 13;
+    font-weight     : 500;
+    font-family     : 'Questrial', sans-serif;
+    letter-spacing  : 0.125em;
+    cursor          : pointer;
+}
+
+/*  Portfolio  */
+
+/*  Footer  */
+
+footer {
+    display        : flex;
+    flex-direction : column;
+    justify-content: center;
+    align-items    : center;
+    gap            : 2em;
+    margin         : 4em 0;
+    letter-spacing : 0.1em;
+    font-weight    : 500;
+}
+
+.copyright {
+    color: var(--footer-text);
+}
+
+.sneak-word {
+    color : var(--pink-custome);
+    cursor: pointer;
+
+}
+
+.contact {
+    display: flex;
+    gap    : 1.2em;
+}
+
+.contact img {
+    cursor: pointer;
+}
+
+/*  Footer  */
+
+/*----------------------------- Media Query --------------------------*/
+
+/* Small (sm) */
+@media (max-width: 640px) {
+    /*  Landing Responsive Small */
+
+    .landing-section {
+        text-align: center;
+    }
+
+    .title-landing {
+        align-items: center;
+        font-size  : 24px;
+        margin-top : -5em;
+    }
+
+    .text-sub {
+        font-size     : 14px;
+        letter-spacing: 0.05em;
+        line-height   : 1.2em;
+    }
+
+    .btn-landing {
+        margin-top: 2em;
+        font-size : 14px;
+    }
+
+    /*  Landing Responsive Small */
+
+    /*  Portfolio Responsive Small */
+    .mode-view button {
+        margin-top: 2em;
+
+    }
+
+    .portfolio {
+        width : 85vw;
+        height: 60%;
+    }
+
+    /*  Portfolio Responsive Small */
+
+}
+
+/* Medium (md) */
+@media (max-width: 768px) {
+
+    /*  Header Responsive Medium*/
+    .navigation-header {
+        flex-direction  : column;
+        position        : fixed;
+        left            : 0;
+        top             : 0;
+        width           : 100%;
+        justify-content : center;
+        align-items     : center;
+        background-color: var(--pink-custome);
+        gap             : 3em;
+        height          : 100%;
+        overflow-y      : auto;
+        opacity         : 0;
+        pointer-events  : none;
+        transition      : opacity 0.3s;
+        font-size       : 26px;
+    }
+
+    .itemsNav a:hover {
+        background-color: var(--gray-text);
+    }
+
+    .itemsNav .active {
+        background-color: var(--gray-text);
+    }
+
+    .open {
+        display   : contents;
+        align-self: flex-end;
+        background: none;
+        font-size : 2em;
+        border    : none;
+    }
+
+    .open i {
+        cursor : pointer;
+        display: flex;
+    }
+
+    .close {
+        display   : flex;
+        align-self: flex-end;
+        z-index   : 2;
+        right     : 1em;
+        top       : 1em;
+        position  : fixed;
+        background: none;
+        font-size : 40px;
+        border    : none;
+    }
+
+    .close i {
+        cursor: pointer;
+    }
+
+    .opened {
+        opacity       : 1;
+        pointer-events: all;
+    }
+
+    /*  Header Responsive Medium */
+
+    /*  Landing Responsive Medium */
+
+
+    .title-landing {
+        font-size     : 32px;
+        font-weight   : 600;
+        letter-spacing: 0.2em;
+        word-spacing  : 0.25em;
+    }
+
+    /*  Landing Responsive Medium*/
+
+    .portfolio {
+        width : 80vw;
+        height: 80%;
+    }
+
+}
+
+/* Large (lg) */
+@media (max-width: 1024px) {
+    /* ... */
+}
+
+/* Extra Large (xl) */
+@media (max-width: 1280px) {
+    /* ... */
+}
